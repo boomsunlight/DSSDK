@@ -1,8 +1,8 @@
 {
   "name": "DSSDK",
-  "version": "0.1.0",
-  "summary": "A short description of DSSDK.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.5",
+  "summary": "DSSDK",
+  "description": "Add long description of the pod here.",
   "homepage": "https://github.com/boomsunlight/DSSDK",
   "license": {
     "type": "MIT",
@@ -13,10 +13,27 @@
   },
   "source": {
     "git": "https://github.com/boomsunlight/DSSDK.git",
-    "tag": "0.1.0"
+    "tag": "0.0.5"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DSSDK/Classes/**/*"
+  "source_files": "DSSDK/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "YYWebImage": [
+
+    ],
+    "YYCache": [
+
+    ],
+    "PPNetworkHelper": [
+
+    ],
+    "MJExtension": [
+
+    ]
+  }
 }

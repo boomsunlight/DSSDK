@@ -1,27 +1,62 @@
 PODS:
-  - DSSDK (0.1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - DSSDK (0.0.5):
+    - AFNetworking
+    - MJExtension
+    - PPNetworkHelper
+    - YYCache
+    - YYWebImage
+  - MJExtension (3.2.2)
+  - PPNetworkHelper (0.8.1):
+    - AFNetworking (~> 3.2.0)
+    - YYCache (~> 1.0.4)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
 
 DEPENDENCIES:
   - DSSDK (from `../`)
-  - FBSnapshotTestCase
 
 SPEC REPOS:
   trunk:
-    - FBSnapshotTestCase
+    - AFNetworking
+    - MJExtension
+    - PPNetworkHelper
+    - YYCache
+    - YYImage
+    - YYWebImage
 
 EXTERNAL SOURCES:
   DSSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DSSDK: 162602e89e8d6b55c76137e3f3733cbc3c78678e
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  DSSDK: b0eb2218605fc8d6f6e4eb1e1aed2d86e21a46df
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 6275bdad819b153607d5a69f0cb92097eed8a59e
+PODFILE CHECKSUM: 1732a2ee9579315a2c0f4629d8acb5574a6d9547
 
 COCOAPODS: 1.9.3
