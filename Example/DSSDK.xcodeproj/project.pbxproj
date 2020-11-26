@@ -40,7 +40,7 @@
 		015470FCF825BB14B85F8CEE /* Pods-DSSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DSSDK_Tests/Pods-DSSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2041AD7377535A4DB192D0DA /* Pods-DSSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-DSSDK_Example/Pods-DSSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3D2A6F36232CDB9AA0F84A9E /* Pods-DSSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DSSDK_Tests/Pods-DSSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		40336C828769CC9FAEC7D2E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		40336C828769CC9FAEC7D2E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DSSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +62,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		70868814D5D218DEA9CA22BC /* Pods-DSSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-DSSDK_Example/Pods-DSSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		78C1CD87612942815D958FEF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		7F0CB219788A48C95FE4CCEF /* DSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DSSDK.podspec; path = ../DSSDK.podspec; sourceTree = "<group>"; };
+		78C1CD87612942815D958FEF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7F0CB219788A48C95FE4CCEF /* DSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DSSDK.podspec; path = ../DSSDK.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B120645D26ACE2A5C8DDA41 /* Pods_DSSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69D09CF0CD93ED9E3A8D65B /* Pods_DSSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				015470FCF825BB14B85F8CEE /* Pods-DSSDK_Tests.debug.xcconfig */,
 				3D2A6F36232CDB9AA0F84A9E /* Pods-DSSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = boomsunlight;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 9Q32358WD8;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,6 +516,7 @@
 			baseConfigurationReference = 2041AD7377535A4DB192D0DA /* Pods-DSSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Q32358WD8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSSDK/DSSDK-Prefix.pch";
 				INFOPLIST_FILE = "DSSDK/DSSDK-Info.plist";
@@ -529,6 +533,7 @@
 			baseConfigurationReference = 70868814D5D218DEA9CA22BC /* Pods-DSSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Q32358WD8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSSDK/DSSDK-Prefix.pch";
 				INFOPLIST_FILE = "DSSDK/DSSDK-Info.plist";
